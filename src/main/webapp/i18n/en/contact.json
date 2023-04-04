@@ -1,0 +1,51 @@
+{
+  "rproductApp": {
+    "contact": {
+      "home": {
+        "title": "Contacts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Contact",
+        "createOrEditLabel": "Create or edit a Contact",
+        "notFound": "No Contacts found"
+      },
+      "created": "A new Contact is created with identifier {{ param }}",
+      "updated": "A Contact is updated with identifier {{ param }}",
+      "deleted": "A Contact is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Contact {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact"
+      },
+      "id": "ID",
+      "clientId": "Client Id",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "designation": "Designation",
+      "officeNumber": "Office Number",
+      "officeNumberExtn": "Office Number Extn",
+      "mobileNumber": "Mobile Number",
+      "emailID": "Email ID",
+      "altEmailID": "Alt Email ID",
+      "ownershipIds": "Ownership Ids",
+      "allowAccessToAllUsers": "Allow Access To All Users",
+      "address1": "Address 1",
+      "address2": "Address 2",
+      "area": "Area",
+      "city": "City",
+      "state": "State",
+      "stateCode": "State Code",
+      "county": "County",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "zipCode": "Zip Code",
+      "profileURLs": "Profile UR Ls",
+      "messengerIDs": "Messenger I Ds",
+      "status": "Status",
+      "clientGroup": "Client Group",
+      "about": "About",
+      "primaryOwnerUser": "Primary Owner User",
+      "client": "Client"
+    }
+  }
+}

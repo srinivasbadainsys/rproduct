@@ -1,0 +1,292 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113310",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "client",
+  "fields": [
+    {
+      "fieldName": "clientVisibility",
+      "fieldType": "ClientVisibility",
+      "fieldValues": "Organization_Level,Unit_Level"
+    },
+    {
+      "fieldName": "businessUnitIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clientName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vmsClientName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "federalID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "area",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "county",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zipCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "website",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sendRequirement",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "sendHotList",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "fax",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "allowAccessToAllUsers",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "ownershipIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clientLeadIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "requiredDocuments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "practiceAlt",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aboutCompany",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stopNotifyingClientContactOnSubmitToClient",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "defaultForJobPostings",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "submissionGuidelines",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignedTo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignedToTeams",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesManagers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountManagers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recruitmentManagers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultTATConfigForJobPostingOrVMSJobs",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "defaultTATConfigTimespan",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifyOnTATToUserTypes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifyOnTATToUserIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxTermIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workAuthorizationIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postJobOnCareersPage",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "defaultPayRateTaxTerm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultBillRateTaxTerm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referencesMandatoryForSubmission",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "maxSubmissions",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "noOfPositions",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "markUp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "msp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mailSubject",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mailBody",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fieldsForExcel",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Client",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "businessUnit",
+      "ownerSide": true,
+      "relationshipName": "primaryBusinessUnit",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "industry",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "category",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "paymentTerms",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "practice",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "primaryOwnerUser",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "clientAccount",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "clientAccount",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "clientNote",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "clientNote",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "clientDocument",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "clientDocument",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "contact",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "clientGuidelineSubmissionDocument",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "clientGuidelineSubmissionDocument",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

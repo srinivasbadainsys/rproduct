@@ -1,0 +1,28 @@
+{
+  "rproductApp": {
+    "jobCustomAttribute": {
+      "home": {
+        "title": "Job Custom Attributes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Job Custom Attribute",
+        "createOrEditLabel": "Create or edit a Job Custom Attribute",
+        "notFound": "No Job Custom Attributes found"
+      },
+      "created": "A new Job Custom Attribute is created with identifier {{ param }}",
+      "updated": "A Job Custom Attribute is updated with identifier {{ param }}",
+      "deleted": "A Job Custom Attribute is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Job Custom Attribute {{ id }}?"
+      },
+      "detail": {
+        "title": "Job Custom Attribute"
+      },
+      "id": "ID",
+      "jobId": "Job Id",
+      "attributeName": "Attribute Name",
+      "attributeType": "Attribute Type",
+      "attributeValue": "Attribute Value",
+      "job": "Job"
+    }
+  }
+}

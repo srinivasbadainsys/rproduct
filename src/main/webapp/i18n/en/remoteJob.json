@@ -1,0 +1,10 @@
+{
+  "rproductApp": {
+    "RemoteJob": {
+      "null": "",
+      "Yes": "Yes",
+      "No": "No",
+      "Hybrid": "Hybrid"
+    }
+  }
+}

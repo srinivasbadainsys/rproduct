@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113309",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "job_custom_attribute",
+  "fields": [
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "attributeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "attributeType",
+      "fieldType": "JobAttributeType",
+      "fieldValues": "Single_Value,Multi_Value"
+    },
+    {
+      "fieldName": "attributeValue",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "JobCustomAttribute",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "job",
+      "otherEntityRelationshipName": "jobCustomAttribute",
+      "relationshipName": "job",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

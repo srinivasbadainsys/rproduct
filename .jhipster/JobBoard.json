@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113306",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "job_board",
+  "fields": [
+    {
+      "fieldName": "jobBoardName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobBoardType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "username",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "settings",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoRefresh",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobDuration",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "JobBoard",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

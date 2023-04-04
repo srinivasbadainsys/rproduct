@@ -1,0 +1,12 @@
+{
+  "rproductApp": {
+    "SalaryTimeSpan": {
+      "null": "",
+      "PerAnnum": "PerAnnum",
+      "PerMonth": "PerMonth",
+      "PerDay": "PerDay",
+      "PerHour": "PerHour",
+      "None": "None"
+    }
+  }
+}

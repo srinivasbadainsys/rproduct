@@ -1,0 +1,9 @@
+{
+  "rproductApp": {
+    "JobAttributeType": {
+      "null": "",
+      "Single_Value": "Single_Value",
+      "Multi_Value": "Multi_Value"
+    }
+  }
+}

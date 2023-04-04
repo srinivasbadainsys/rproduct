@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Client.
+    -->
+    <changeSet id="20230404113310-1" author="jhipster">
+        <createTable tableName="client">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="client_visibility" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="business_unit_ids" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="client_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vms_client_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="federal_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="contact_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="address" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="area" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="city" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="state" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="state_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="county" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="country" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="country_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zip_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="website" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="send_requirement" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="send_hot_list" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="fax" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="allow_access_to_all_users" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="ownership_ids" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="client_lead_ids" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="required_documents" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="practice_alt" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="about_company" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="stop_notifying_client_contact_on_submit_to_client" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_for_job_postings" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="submission_guidelines" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="assigned_to" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="assigned_to_teams" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sales_managers" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="account_managers" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="recruitment_managers" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_tat_config_for_job_posting_or_vms_jobs" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_tat_config_timespan" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="notify_on_tat_to_user_types" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="notify_on_tat_to_user_ids" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_term_ids" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="work_authorization_ids" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="post_job_on_careers_page" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_pay_rate_tax_term" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="default_bill_rate_tax_term" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="references_mandatory_for_submission" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_submissions" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="no_of_positions" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="mark_up" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="msp" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mail_subject" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mail_body" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="fields_for_excel" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="primary_business_unit_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_client__primary_business_unit_id" />
+            </column>
+            <column name="industry_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_client__industry_id" />
+            </column>
+            <column name="category_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_client__category_id" />
+            </column>
+            <column name="payment_terms_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_client__payment_terms_id" />
+            </column>
+            <column name="practice_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_client__practice_id" />
+            </column>
+            <column name="primary_owner_user_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_client__primary_owner_user_id" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20230404113310-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/client.csv"
+                  separator=";"
+                  tableName="client"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="client_visibility" type="string"/>
+            <column name="business_unit_ids" type="string"/>
+            <column name="client_name" type="string"/>
+            <column name="vms_client_name" type="string"/>
+            <column name="federal_id" type="string"/>
+            <column name="contact_number" type="string"/>
+            <column name="email" type="string"/>
+            <column name="address" type="string"/>
+            <column name="area" type="string"/>
+            <column name="city" type="string"/>
+            <column name="state" type="string"/>
+            <column name="state_code" type="string"/>
+            <column name="county" type="string"/>
+            <column name="country" type="string"/>
+            <column name="country_code" type="string"/>
+            <column name="zip_code" type="string"/>
+            <column name="website" type="string"/>
+            <column name="send_requirement" type="boolean"/>
+            <column name="send_hot_list" type="boolean"/>
+            <column name="fax" type="string"/>
+            <column name="status" type="string"/>
+            <column name="allow_access_to_all_users" type="boolean"/>
+            <column name="ownership_ids" type="string"/>
+            <column name="client_lead_ids" type="string"/>
+            <column name="required_documents" type="string"/>
+            <column name="practice_alt" type="string"/>
+            <column name="about_company" type="string"/>
+            <column name="stop_notifying_client_contact_on_submit_to_client" type="boolean"/>
+            <column name="default_for_job_postings" type="boolean"/>
+            <column name="submission_guidelines" type="string"/>
+            <column name="assigned_to" type="string"/>
+            <column name="assigned_to_teams" type="string"/>
+            <column name="sales_managers" type="string"/>
+            <column name="account_managers" type="string"/>
+            <column name="recruitment_managers" type="string"/>
+            <column name="default_tat_config_for_job_posting_or_vms_jobs" type="numeric"/>
+            <column name="default_tat_config_timespan" type="string"/>
+            <column name="notify_on_tat_to_user_types" type="string"/>
+            <column name="notify_on_tat_to_user_ids" type="string"/>
+            <column name="tax_term_ids" type="string"/>
+            <column name="work_authorization_ids" type="string"/>
+            <column name="post_job_on_careers_page" type="boolean"/>
+            <column name="default_pay_rate_tax_term" type="string"/>
+            <column name="default_bill_rate_tax_term" type="string"/>
+            <column name="references_mandatory_for_submission" type="boolean"/>
+            <column name="max_submissions" type="numeric"/>
+            <column name="no_of_positions" type="numeric"/>
+            <column name="mark_up" type="string"/>
+            <column name="msp" type="string"/>
+            <column name="mail_subject" type="string"/>
+            <column name="mail_body" type="string"/>
+            <column name="fields_for_excel" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

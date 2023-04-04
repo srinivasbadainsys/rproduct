@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity UserWork.
+    -->
+    <changeSet id="20230404113304-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="user_work"
+                                 constraintName="fk_user_work__user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruser"/>
+
+        <addForeignKeyConstraint baseColumnNames="team_id"
+                                 baseTableName="user_work"
+                                 constraintName="fk_user_work__team_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="team"/>
+
+        <addForeignKeyConstraint baseColumnNames="job_id"
+                                 baseTableName="user_work"
+                                 constraintName="fk_user_work__job_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="job"/>
+    </changeSet>
+</databaseChangeLog>

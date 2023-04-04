@@ -1,0 +1,9 @@
+{
+  "rproductApp": {
+    "JobBoardPostStatus": {
+      "null": "",
+      "Not_Posted": "Not_Posted",
+      "Posted": "Posted"
+    }
+  }
+}

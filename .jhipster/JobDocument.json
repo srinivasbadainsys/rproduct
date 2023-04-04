@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113302",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "job_document",
+  "fields": [
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "documentTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "documentLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "documentPassword",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "JobDocument",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "job",
+      "otherEntityRelationshipName": "jobDocument",
+      "relationshipName": "job",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

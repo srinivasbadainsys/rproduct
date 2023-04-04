@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113316",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "catalogue",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "typeCode",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Catalogue",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

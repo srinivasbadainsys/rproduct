@@ -1,0 +1,37 @@
+{
+  "rproductApp": {
+    "jobLocation": {
+      "home": {
+        "title": "Job Locations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Job Location",
+        "createOrEditLabel": "Create or edit a Job Location",
+        "notFound": "No Job Locations found"
+      },
+      "created": "A new Job Location is created with identifier {{ param }}",
+      "updated": "A Job Location is updated with identifier {{ param }}",
+      "deleted": "A Job Location is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Job Location {{ id }}?"
+      },
+      "detail": {
+        "title": "Job Location"
+      },
+      "id": "ID",
+      "jobId": "Job Id",
+      "area": "Area",
+      "city": "City",
+      "state": "State",
+      "stateCode": "State Code",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "zipCode": "Zip Code",
+      "lat": "Lat",
+      "lon": "Lon",
+      "continent": "Continent",
+      "continentCode": "Continent Code",
+      "point": "Point",
+      "job": "Job"
+    }
+  }
+}

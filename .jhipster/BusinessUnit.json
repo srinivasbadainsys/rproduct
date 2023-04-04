@@ -1,0 +1,84 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113256",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "business_unit",
+  "fields": [
+    {
+      "fieldName": "unitName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileContact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "officeContact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "officeContactExtn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "area",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zipCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "lon",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "continent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "continentCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "point",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "BusinessUnit",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

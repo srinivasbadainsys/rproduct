@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113308",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "job_board_post",
+  "fields": [
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "JobBoardPostStatus",
+      "fieldValues": "Not_Posted,Posted"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "JobBoardPost",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "job",
+      "ownerSide": true,
+      "relationshipName": "job",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "jobBoard",
+      "ownerSide": true,
+      "relationshipName": "jobBoard",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

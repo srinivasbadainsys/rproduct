@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113303",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "job_work",
+  "fields": [
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "assignedToTeams",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignedToUsers",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "JobWork",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

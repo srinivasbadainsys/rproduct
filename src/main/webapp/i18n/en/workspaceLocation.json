@@ -1,0 +1,36 @@
+{
+  "rproductApp": {
+    "workspaceLocation": {
+      "home": {
+        "title": "Workspace Locations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Workspace Location",
+        "createOrEditLabel": "Create or edit a Workspace Location",
+        "notFound": "No Workspace Locations found"
+      },
+      "created": "A new Workspace Location is created with identifier {{ param }}",
+      "updated": "A Workspace Location is updated with identifier {{ param }}",
+      "deleted": "A Workspace Location is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Workspace Location {{ id }}?"
+      },
+      "detail": {
+        "title": "Workspace Location"
+      },
+      "id": "ID",
+      "area": "Area",
+      "city": "City",
+      "state": "State",
+      "stateCode": "State Code",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "zipCode": "Zip Code",
+      "lat": "Lat",
+      "lon": "Lon",
+      "continent": "Continent",
+      "continentCode": "Continent Code",
+      "point": "Point",
+      "workspace": "Workspace"
+    }
+  }
+}

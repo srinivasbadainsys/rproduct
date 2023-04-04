@@ -1,0 +1,30 @@
+{
+  "rproductApp": {
+    "jobBoard": {
+      "home": {
+        "title": "Job Boards",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Job Board",
+        "createOrEditLabel": "Create or edit a Job Board",
+        "notFound": "No Job Boards found"
+      },
+      "created": "A new Job Board is created with identifier {{ param }}",
+      "updated": "A Job Board is updated with identifier {{ param }}",
+      "deleted": "A Job Board is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Job Board {{ id }}?"
+      },
+      "detail": {
+        "title": "Job Board"
+      },
+      "id": "ID",
+      "jobBoardName": "Job Board Name",
+      "jobBoardType": "Job Board Type",
+      "username": "Username",
+      "password": "Password",
+      "settings": "Settings",
+      "autoRefresh": "Auto Refresh",
+      "jobDuration": "Job Duration"
+    }
+  }
+}

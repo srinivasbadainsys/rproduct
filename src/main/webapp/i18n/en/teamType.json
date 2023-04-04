@@ -1,0 +1,9 @@
+{
+  "rproductApp": {
+    "TeamType": {
+      "null": "",
+      "TEAM": "TEAM",
+      "GROUP": "GROUP"
+    }
+  }
+}

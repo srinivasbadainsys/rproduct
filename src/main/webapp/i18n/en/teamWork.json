@@ -1,0 +1,25 @@
+{
+  "rproductApp": {
+    "teamWork": {
+      "home": {
+        "title": "Team Works",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Team Work",
+        "createOrEditLabel": "Create or edit a Team Work",
+        "notFound": "No Team Works found"
+      },
+      "created": "A new Team Work is created with identifier {{ param }}",
+      "updated": "A Team Work is updated with identifier {{ param }}",
+      "deleted": "A Team Work is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Team Work {{ id }}?"
+      },
+      "detail": {
+        "title": "Team Work"
+      },
+      "id": "ID",
+      "jobId": "Job Id",
+      "teamId": "Team Id"
+    }
+  }
+}

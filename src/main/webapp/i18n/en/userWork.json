@@ -1,0 +1,27 @@
+{
+  "rproductApp": {
+    "userWork": {
+      "home": {
+        "title": "User Works",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new User Work",
+        "createOrEditLabel": "Create or edit a User Work",
+        "notFound": "No User Works found"
+      },
+      "created": "A new User Work is created with identifier {{ param }}",
+      "updated": "A User Work is updated with identifier {{ param }}",
+      "deleted": "A User Work is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User Work {{ id }}?"
+      },
+      "detail": {
+        "title": "User Work"
+      },
+      "id": "ID",
+      "jobId": "Job Id",
+      "user": "User",
+      "team": "Team",
+      "job": "Job"
+    }
+  }
+}
