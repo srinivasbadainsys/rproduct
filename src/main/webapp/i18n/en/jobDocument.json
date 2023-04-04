@@ -1,0 +1,28 @@
+{
+  "rproductApp": {
+    "jobDocument": {
+      "home": {
+        "title": "Job Documents",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Job Document",
+        "createOrEditLabel": "Create or edit a Job Document",
+        "notFound": "No Job Documents found"
+      },
+      "created": "A new Job Document is created with identifier {{ param }}",
+      "updated": "A Job Document is updated with identifier {{ param }}",
+      "deleted": "A Job Document is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Job Document {{ id }}?"
+      },
+      "detail": {
+        "title": "Job Document"
+      },
+      "id": "ID",
+      "jobId": "Job Id",
+      "documentTitle": "Document Title",
+      "documentLocation": "Document Location",
+      "documentPassword": "Document Password",
+      "job": "Job"
+    }
+  }
+}

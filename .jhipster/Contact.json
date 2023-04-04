@@ -1,0 +1,133 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113315",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "contact",
+  "fields": [
+    {
+      "fieldName": "clientId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "designation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "officeNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "officeNumberExtn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "altEmailID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ownershipIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "allowAccessToAllUsers",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "address1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "area",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "county",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zipCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profileURLs",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "messengerIDs",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clientGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "about",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Contact",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "primaryOwnerUser",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "contact",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

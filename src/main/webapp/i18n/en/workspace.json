@@ -1,0 +1,41 @@
+{
+  "rproductApp": {
+    "workspace": {
+      "home": {
+        "title": "Workspaces",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Workspace",
+        "createOrEditLabel": "Create or edit a Workspace",
+        "notFound": "No Workspaces found"
+      },
+      "created": "A new Workspace is created with identifier {{ param }}",
+      "updated": "A Workspace is updated with identifier {{ param }}",
+      "deleted": "A Workspace is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Workspace {{ id }}?"
+      },
+      "detail": {
+        "title": "Workspace"
+      },
+      "id": "ID",
+      "name": "Name",
+      "orgName": "Org Name",
+      "about": "About",
+      "link": "Link",
+      "orgURLs": "Org UR Ls",
+      "ownerUserId": "Owner User Id",
+      "mainPhoneNumber": "Main Phone Number",
+      "altPhoneNumbers": "Alt Phone Numbers",
+      "mainContactEmail": "Main Contact Email",
+      "altContactEmails": "Alt Contact Emails",
+      "status": "Status",
+      "enableAutoJoin": "Enable Auto Join",
+      "maxUsers": "Max Users",
+      "tags": "Tags",
+      "domains": "Domains",
+      "workspaceUser": "Workspace User",
+      "workspaceLocation": "Workspace Location",
+      "team": "Team"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113314",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "client_guideline_submission_document",
+  "fields": [
+    {
+      "fieldName": "clientId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "documentTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "documentPath",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ClientGuidelineSubmissionDocument",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "clientGuidelineSubmissionDocument",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

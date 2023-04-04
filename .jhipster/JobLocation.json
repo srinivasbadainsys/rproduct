@@ -1,0 +1,75 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113301",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "job_location",
+  "fields": [
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "area",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zipCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "lon",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "continent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "continentCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "point",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "JobLocation",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "job",
+      "otherEntityRelationshipName": "jobLocation",
+      "relationshipName": "job",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,30 @@
+{
+  "rproductApp": {
+    "jobBoardSharedTo": {
+      "home": {
+        "title": "Job Board Shared Tos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Job Board Shared To",
+        "createOrEditLabel": "Create or edit a Job Board Shared To",
+        "notFound": "No Job Board Shared Tos found"
+      },
+      "created": "A new Job Board Shared To is created with identifier {{ param }}",
+      "updated": "A Job Board Shared To is updated with identifier {{ param }}",
+      "deleted": "A Job Board Shared To is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Job Board Shared To {{ id }}?"
+      },
+      "detail": {
+        "title": "Job Board Shared To"
+      },
+      "id": "ID",
+      "jobBoardId": "Job Board Id",
+      "sharedToEmails": "Shared To Emails",
+      "sharedToUserIds": "Shared To User Ids",
+      "sharedToTeamIds": "Shared To Team Ids",
+      "maxExamilsMonthly": "Max Examils Monthly",
+      "expiresOn": "Expires On",
+      "jobBoard": "Job Board"
+    }
+  }
+}

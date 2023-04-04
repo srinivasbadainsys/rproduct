@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113312",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "client_note",
+  "fields": [
+    {
+      "fieldName": "clientId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "action",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notesPriority",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifyToUsers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "remindMe",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ClientNote",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "clientNote",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

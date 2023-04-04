@@ -1,0 +1,62 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113259",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "team",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "teamGroupEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "TeamType",
+      "fieldValues": "TEAM,GROUP"
+    },
+    {
+      "fieldName": "notifyOnJobPostingToUsers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifyOnJobSharingToUsers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifyOnJobClosingToUsers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifyOnCandSubmissionToUsers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifyOnCandStatusChangeToUsers",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Team",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "teamMember",
+      "otherEntityRelationshipName": "team",
+      "relationshipName": "teamMember",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "workspace",
+      "otherEntityRelationshipName": "team",
+      "relationshipName": "workspace",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

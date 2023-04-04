@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113317",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "catalogue_value",
+  "fields": [
+    {
+      "fieldName": "catalogueId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "value",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CatalogueValue",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

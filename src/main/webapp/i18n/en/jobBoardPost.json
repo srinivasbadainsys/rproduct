@@ -1,0 +1,27 @@
+{
+  "rproductApp": {
+    "jobBoardPost": {
+      "home": {
+        "title": "Job Board Posts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Job Board Post",
+        "createOrEditLabel": "Create or edit a Job Board Post",
+        "notFound": "No Job Board Posts found"
+      },
+      "created": "A new Job Board Post is created with identifier {{ param }}",
+      "updated": "A Job Board Post is updated with identifier {{ param }}",
+      "deleted": "A Job Board Post is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Job Board Post {{ id }}?"
+      },
+      "detail": {
+        "title": "Job Board Post"
+      },
+      "id": "ID",
+      "jobId": "Job Id",
+      "status": "Status",
+      "job": "Job",
+      "jobBoard": "Job Board"
+    }
+  }
+}

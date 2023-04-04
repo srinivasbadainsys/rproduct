@@ -1,0 +1,380 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113300",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "job",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clientJobCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orgName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orgEmploymentTypeIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobRef",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobSource",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publicJobTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publicJobDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoCloseDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "noOfPositions",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "departmentAltText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "displayCandRate",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "candRateCurrency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "candMinRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "candMaxRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "candRateTimeSpan",
+      "fieldType": "SalaryTimeSpan",
+      "fieldValues": "PerAnnum,PerMonth,PerDay,PerHour,None"
+    },
+    {
+      "fieldName": "candRateTaxTerm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "candSalaryAltDisplayText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "otherBenefitDetails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clientBillRateCurrency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clientBillRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "clientBillRateTimeSpan",
+      "fieldType": "SalaryTimeSpan",
+      "fieldValues": "PerAnnum,PerMonth,PerDay,PerHour,None"
+    },
+    {
+      "fieldName": "clientBillRateTaxTerm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workDuration",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "immigrationStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "displayImmigrationStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "skills",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "altSkills",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tags",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "qualificationIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "qualificationsAltText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eduRequirements",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expRequirements",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expAltText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "minExpInYears",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "maxExpInYears",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "languageIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "visaRequirements",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workAuthorizationIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "applicationFormType",
+      "fieldType": "JobApplicationForm",
+      "fieldValues": "General_Application,Referral_Portal_Application"
+    },
+    {
+      "fieldName": "isPartnerJob",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "redirectionUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobStatus",
+      "fieldType": "JobStatus",
+      "fieldValues": "Active,Closed,Filled,Hold_by_Client,On_Hold,Position_closed_by_another_vendor"
+    },
+    {
+      "fieldName": "endClient",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "domainAlt",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "comments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "additionalNotificationsToUserIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "additionalNotificationsToTeamIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "requiredDocumentIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobCloseReasonOtherAlt",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addToCareerPage",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "remoteJob",
+      "fieldType": "RemoteJob",
+      "fieldValues": "Yes,No,Hybrid"
+    },
+    {
+      "fieldName": "hiringFor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workDurationTimeSpan",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxTerms",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Job",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "team",
+      "ownerSide": true,
+      "relationshipName": "postedByTeam",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "businessUnit",
+      "ownerSide": true,
+      "relationshipName": "businessUnit",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "client",
+      "ownerSide": true,
+      "relationshipName": "client",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "jobType",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "industry",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "department",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "clientRecruiter",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "contact",
+      "ownerSide": true,
+      "relationshipName": "clientManager",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "accountManager",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "headOfRecruitment",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "deliveryLeadManager",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "domain",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "srDeliveryManager",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "teamLead",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "priority",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "jobCloseReason",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "jobCategory",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "jobOccupation",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "jobLocation",
+      "otherEntityRelationshipName": "job",
+      "relationshipName": "jobLocation",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "jobDocument",
+      "otherEntityRelationshipName": "job",
+      "relationshipName": "jobDocument",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "jobCustomAttribute",
+      "otherEntityRelationshipName": "job",
+      "relationshipName": "jobCustomAttribute",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

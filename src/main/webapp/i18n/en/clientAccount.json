@@ -1,0 +1,31 @@
+{
+  "rproductApp": {
+    "clientAccount": {
+      "home": {
+        "title": "Client Accounts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Client Account",
+        "createOrEditLabel": "Create or edit a Client Account",
+        "notFound": "No Client Accounts found"
+      },
+      "created": "A new Client Account is created with identifier {{ param }}",
+      "updated": "A Client Account is updated with identifier {{ param }}",
+      "deleted": "A Client Account is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Client Account {{ id }}?"
+      },
+      "detail": {
+        "title": "Client Account"
+      },
+      "id": "ID",
+      "clientId": "Client Id",
+      "contactPerson": "Contact Person",
+      "mobileNumber": "Mobile Number",
+      "officeNumber": "Office Number",
+      "officeNumberExtn": "Office Number Extn",
+      "emailID": "Email ID",
+      "designation": "Designation",
+      "client": "Client"
+    }
+  }
+}

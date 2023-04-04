@@ -17,7 +17,49 @@
     <property name="datetimeType" value="datetime" dbms="postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113253_added_entity_Ruser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113254_added_entity_Workspace.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113255_added_entity_WorkspaceLocation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113256_added_entity_BusinessUnit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113257_added_entity_WorkspaceUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113258_added_entity_TeamMember.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113259_added_entity_Team.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113300_added_entity_Job.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113301_added_entity_JobLocation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113302_added_entity_JobDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113303_added_entity_JobWork.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113304_added_entity_UserWork.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113305_added_entity_TeamWork.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113306_added_entity_JobBoard.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113307_added_entity_JobBoardSharedTo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113308_added_entity_JobBoardPost.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113309_added_entity_JobCustomAttribute.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113310_added_entity_Client.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113311_added_entity_ClientAccount.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113312_added_entity_ClientNote.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113313_added_entity_ClientDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113314_added_entity_ClientGuidelineSubmissionDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113315_added_entity_Contact.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113316_added_entity_Catalogue.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113317_added_entity_CatalogueValue.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20230404113255_added_entity_constraints_WorkspaceLocation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113257_added_entity_constraints_WorkspaceUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113258_added_entity_constraints_TeamMember.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113259_added_entity_constraints_Team.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113300_added_entity_constraints_Job.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113301_added_entity_constraints_JobLocation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113302_added_entity_constraints_JobDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113304_added_entity_constraints_UserWork.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113307_added_entity_constraints_JobBoardSharedTo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113308_added_entity_constraints_JobBoardPost.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113309_added_entity_constraints_JobCustomAttribute.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113310_added_entity_constraints_Client.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113311_added_entity_constraints_ClientAccount.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113312_added_entity_constraints_ClientNote.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113313_added_entity_constraints_ClientDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113314_added_entity_constraints_ClientGuidelineSubmissionDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404113315_added_entity_constraints_Contact.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

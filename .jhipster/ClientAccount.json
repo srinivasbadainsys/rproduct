@@ -1,0 +1,51 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113311",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "client_account",
+  "fields": [
+    {
+      "fieldName": "clientId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "contactPerson",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "officeNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "officeNumberExtn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "designation",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ClientAccount",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "clientAccount",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

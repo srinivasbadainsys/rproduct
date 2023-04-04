@@ -1,0 +1,34 @@
+{
+  "rproductApp": {
+    "ruser": {
+      "home": {
+        "title": "Rusers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Ruser",
+        "createOrEditLabel": "Create or edit a Ruser",
+        "notFound": "No Rusers found"
+      },
+      "created": "A new Ruser is created with identifier {{ param }}",
+      "updated": "A Ruser is updated with identifier {{ param }}",
+      "deleted": "A Ruser is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ruser {{ id }}?"
+      },
+      "detail": {
+        "title": "Ruser"
+      },
+      "id": "ID",
+      "login": "Login",
+      "password": "Password",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "activated": "Activated",
+      "langKey": "Lang Key",
+      "imageUrl": "Image Url",
+      "activationKey": "Activation Key",
+      "resetKey": "Reset Key",
+      "resetDate": "Reset Date"
+    }
+  }
+}

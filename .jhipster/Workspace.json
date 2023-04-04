@@ -1,0 +1,95 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113254",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "workspace",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orgName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "about",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "link",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orgURLs",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ownerUserId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "mainPhoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "altPhoneNumbers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mainContactEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "altContactEmails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enableAutoJoin",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "maxUsers",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tags",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "domains",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Workspace",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "workspaceUser",
+      "otherEntityRelationshipName": "workspace",
+      "relationshipName": "workspaceUser",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "workspaceLocation",
+      "otherEntityRelationshipName": "workspace",
+      "relationshipName": "workspaceLocation",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "team",
+      "otherEntityRelationshipName": "workspace",
+      "relationshipName": "team",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

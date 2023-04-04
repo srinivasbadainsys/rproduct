@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113304",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "user_work",
+  "fields": [
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UserWork",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "team",
+      "ownerSide": true,
+      "relationshipName": "team",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "job",
+      "ownerSide": true,
+      "relationshipName": "job",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

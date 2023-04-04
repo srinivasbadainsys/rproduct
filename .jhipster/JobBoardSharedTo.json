@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113307",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "job_board_shared_to",
+  "fields": [
+    {
+      "fieldName": "jobBoardId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "sharedToEmails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sharedToUserIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sharedToTeamIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maxExamilsMonthly",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "expiresOn",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "JobBoardSharedTo",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "jobBoard",
+      "ownerSide": true,
+      "relationshipName": "jobBoard",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

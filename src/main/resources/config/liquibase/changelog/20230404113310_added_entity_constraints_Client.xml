@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Client.
+    -->
+    <changeSet id="20230404113310-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="primary_business_unit_id"
+                                 baseTableName="client"
+                                 constraintName="fk_client__primary_business_unit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="business_unit"/>
+
+        <addForeignKeyConstraint baseColumnNames="industry_id"
+                                 baseTableName="client"
+                                 constraintName="fk_client__industry_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="category_id"
+                                 baseTableName="client"
+                                 constraintName="fk_client__category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="payment_terms_id"
+                                 baseTableName="client"
+                                 constraintName="fk_client__payment_terms_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="practice_id"
+                                 baseTableName="client"
+                                 constraintName="fk_client__practice_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="primary_owner_user_id"
+                                 baseTableName="client"
+                                 constraintName="fk_client__primary_owner_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruser"/>
+    </changeSet>
+</databaseChangeLog>

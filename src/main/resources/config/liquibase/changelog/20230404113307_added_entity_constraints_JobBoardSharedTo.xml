@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity JobBoardSharedTo.
+    -->
+    <changeSet id="20230404113307-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="job_board_id"
+                                 baseTableName="job_board_shared_to"
+                                 constraintName="fk_job_board_shared_to__job_board_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="job_board"/>
+    </changeSet>
+</databaseChangeLog>

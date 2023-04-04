@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Job.
+    -->
+    <changeSet id="20230404113300-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="posted_by_team_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__posted_by_team_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="team"/>
+
+        <addForeignKeyConstraint baseColumnNames="business_unit_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__business_unit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="business_unit"/>
+
+        <addForeignKeyConstraint baseColumnNames="client_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__client_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="client"/>
+
+        <addForeignKeyConstraint baseColumnNames="job_type_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__job_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="industry_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__industry_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="department_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__department_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="client_recruiter_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__client_recruiter_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruser"/>
+
+        <addForeignKeyConstraint baseColumnNames="client_manager_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__client_manager_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="contact"/>
+
+        <addForeignKeyConstraint baseColumnNames="account_manager_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__account_manager_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruser"/>
+
+        <addForeignKeyConstraint baseColumnNames="head_of_recruitment_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__head_of_recruitment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruser"/>
+
+        <addForeignKeyConstraint baseColumnNames="delivery_lead_manager_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__delivery_lead_manager_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruser"/>
+
+        <addForeignKeyConstraint baseColumnNames="domain_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__domain_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="sr_delivery_manager_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__sr_delivery_manager_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruser"/>
+
+        <addForeignKeyConstraint baseColumnNames="team_lead_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__team_lead_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruser"/>
+
+        <addForeignKeyConstraint baseColumnNames="priority_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__priority_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="job_close_reason_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__job_close_reason_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="job_category_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__job_category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="job_occupation_id"
+                                 baseTableName="job"
+                                 constraintName="fk_job__job_occupation_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+    </changeSet>
+</databaseChangeLog>

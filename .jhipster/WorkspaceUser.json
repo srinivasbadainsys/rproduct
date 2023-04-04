@@ -1,0 +1,59 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113257",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "workspace_user",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "invitationKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "owns",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "accepted",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "invited",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "requested",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "barred",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "roles",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "requestedOn",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "WorkspaceUser",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "workspace",
+      "otherEntityRelationshipName": "workspaceUser",
+      "relationshipName": "workspace",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

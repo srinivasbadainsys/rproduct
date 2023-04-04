@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113258",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "team_member",
+  "fields": [
+    {
+      "fieldName": "teamId",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TeamMember",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "ruser",
+      "ownerSide": true,
+      "relationshipName": "memberUser",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "team",
+      "otherEntityRelationshipName": "teamMember",
+      "relationshipName": "team",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

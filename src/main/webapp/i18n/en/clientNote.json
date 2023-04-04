@@ -1,0 +1,30 @@
+{
+  "rproductApp": {
+    "clientNote": {
+      "home": {
+        "title": "Client Notes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Client Note",
+        "createOrEditLabel": "Create or edit a Client Note",
+        "notFound": "No Client Notes found"
+      },
+      "created": "A new Client Note is created with identifier {{ param }}",
+      "updated": "A Client Note is updated with identifier {{ param }}",
+      "deleted": "A Client Note is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Client Note {{ id }}?"
+      },
+      "detail": {
+        "title": "Client Note"
+      },
+      "id": "ID",
+      "clientId": "Client Id",
+      "action": "Action",
+      "notesPriority": "Notes Priority",
+      "note": "Note",
+      "notifyToUsers": "Notify To Users",
+      "remindMe": "Remind Me",
+      "client": "Client"
+    }
+  }
+}

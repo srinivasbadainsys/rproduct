@@ -1,0 +1,26 @@
+{
+  "rproductApp": {
+    "jobWork": {
+      "home": {
+        "title": "Job Works",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Job Work",
+        "createOrEditLabel": "Create or edit a Job Work",
+        "notFound": "No Job Works found"
+      },
+      "created": "A new Job Work is created with identifier {{ param }}",
+      "updated": "A Job Work is updated with identifier {{ param }}",
+      "deleted": "A Job Work is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Job Work {{ id }}?"
+      },
+      "detail": {
+        "title": "Job Work"
+      },
+      "id": "ID",
+      "jobId": "Job Id",
+      "assignedToTeams": "Assigned To Teams",
+      "assignedToUsers": "Assigned To Users"
+    }
+  }
+}

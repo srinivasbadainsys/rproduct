@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20230404113305",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "team_work",
+  "fields": [
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "teamId",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TeamWork",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}
