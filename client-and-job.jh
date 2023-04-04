@@ -1,0 +1,517 @@
+
+
+entity Workspace {
+    name String,
+    orgName String,
+    about String,
+    link String,
+    orgURLs String,//[]
+    ownerUserId Long,
+    mainPhoneNumber String,
+    altPhoneNumbers String,//[]
+    mainContactEmail String,
+    altContactEmails String,//[]
+    status String, 
+    enableAutoJoin Boolean,
+    maxUsers Integer,
+    tags String,//[]
+    domains String,//[] 
+}
+
+entity WorkspaceLocation {    
+    area String,
+    city String,
+    state String,
+    stateCode String,
+    country String,
+    countryCode String,
+    zipCode String,
+    lat Double,
+    lon Double,
+    continent String,
+    continentCode String,
+    point String
+}
+
+entity BusinessUnit {
+    unitName String,
+    address String    
+    mobileContact String,
+    officeContact String,
+    officeContactExtn String,
+    area String,
+    city String,
+    state String,
+    stateCode String,
+    country String,
+    countryCode String,
+    zipCode String,
+    lat Double,
+    lon Double,
+    continent String,
+    continentCode String,
+    point String
+}
+
+entity WorkspaceUser {
+    userId Long,
+    invitationKey String,
+    owns Boolean,
+    accepted Boolean,
+    invited Boolean,
+    requested Boolean,
+    barred Boolean,
+    roles String,//[]
+    requestedOn ZonedDateTime,
+}
+
+entity TeamMember {    
+	teamId Long
+}
+
+
+entity Team {
+    name String,    
+    teamGroupEmail String,
+    type TeamType,    
+    notifyOnJobPostingToUsers String, //[]  //Ids of users 
+    notifyOnJobSharingToUsers String, //[]    
+    notifyOnJobClosingToUsers String, //[]    
+    notifyOnCandSubmissionToUsers String, //[]    
+    notifyOnCandStatusChangeToUsers String //[]
+}
+enum TeamType {
+	TEAM, GROUP
+}
+
+relationship OneToMany {
+	Workspace to WorkspaceUser{workspace},	
+	Workspace to WorkspaceLocation{workspace},
+    Workspace to Team{workspace}
+}
+
+relationship OneToMany {
+	Team to TeamMember{team}
+}
+
+relationship OneToOne {
+    TeamMember{memberUser} to Ruser
+}
+enum RemoteJob {
+	Yes, No, Hybrid
+}
+enum SalaryTimeSpan {
+    PerAnnum, PerMonth, PerDay, PerHour, None
+}
+enum JobBoardPostStatus {
+	Not_Posted, Posted
+}
+enum JobStatus {
+	Active, Closed, Filled, Hold_by_Client, On_Hold, Position_closed_by_another_vendor
+}
+enum JobAttributeType {
+	Single_Value, Multi_Value
+}
+enum ClientVisibility {
+	Organization_Level, Unit_Level
+}
+
+enum JobApplicationForm {
+	General_Application, Referral_Portal_Application    
+}
+
+
+
+entity Job {
+	 //id Long,     
+     //postedByTeamId Long, //ref team
+     //workspaceId Long,
+     //businessUnitId Long, //ref businessUnit
+     title String,
+     jobCode String,
+     //clientId Long, //ref client
+     clientJobCode String,
+     orgName String,
+     orgEmploymentTypeIds String, //[] //ref catalogue
+     jobRef String,
+     jobSource String,
+     //jobTypeId Long, //ref catalogue
+     url String,
+     description String,   
+     publicJobTitle String,
+     publicJobDescription String,
+     //postedDate ZonedDateTime,
+     autoCloseDate ZonedDateTime,
+     noOfPositions Integer,
+     //industryId Long, //ref catalogue
+     //departmentId String, //ref catalogue
+     departmentAltText String,
+     displayCandRate Boolean,
+     candRateCurrency String, //ui data from catalogue
+     candMinRate BigDecimal,
+     candMaxRate BigDecimal,
+     candRateTimeSpan SalaryTimeSpan,
+     candRateTaxTerm String,
+     candSalaryAltDisplayText String,
+     otherBenefitDetails String,
+     clientBillRateCurrency String,
+     clientBillRate BigDecimal,
+     clientBillRateTimeSpan SalaryTimeSpan,
+     clientBillRateTaxTerm String, //UI data from catalogue
+
+     workDuration String,
+     immigrationStatus String,
+     displayImmigrationStatus String,
+     skills String, //[]
+     altSkills String, //[]
+     tags String, //[]
+     qualificationIds String, //[] //ref catalogue
+     qualificationsAltText String,
+     eduRequirements String, //[] 
+     expRequirements String, //[]
+     expAltText String,
+     minExpInYears Double,
+     maxExpInYears Double,
+     languageIds String, //[] //ref catalogue
+
+     visaRequirements String, //[]
+     workAuthorizationIds String, //[] //ref catalgoue
+     applicationFormType JobApplicationForm, 
+     isPartnerJob Boolean,
+     redirectionUrl String,
+     jobStatus JobStatus,    
+  
+     //clientRecruiterId Long, 
+     //clientManagerId Long,     
+     endClient String,     
+     //accountManagerId Long,
+     //headOfRecruitmentId Long,     
+     //domainId Long, //ref catalogue
+     domainAlt String,      
+     //deliveryLeadManagerId Long, //ref user     
+     //srDeliveryManagerId Long, //ref user
+     //teamLeadId Long, //ref user
+     comments String,     
+     additionalNotificationsToUserIds String, //[]
+     additionalNotificationsToTeamIds String, //[]   
+     requiredDocumentIds String, //[] //ref catalogue
+     //priorityId Long, //ref catalogue
+     //jobCloseReasonId Long,//ref catalogue
+     jobCloseReasonOtherAlt String,
+     addToCareerPage Boolean,
+     //jobCategoryId Long,//ref catalogue
+     //jobOccupationId Long,//ref catalogue 
+     remoteJob RemoteJob, 
+     hiringFor String,
+     workDurationTimeSpan String,
+     taxTerms String
+}
+
+entity JobLocation {
+    jobId Long,
+    area String,
+    city String,
+    state String,
+    stateCode String,
+    country String,
+    countryCode String,
+    zipCode String,
+    lat Double,
+    lon Double,
+    continent String,
+    continentCode String,
+    point String
+}
+
+entity JobDocument {
+	//id Long,
+    jobId Long,
+    //workspaceId Long,
+    documentTitle String,
+    documentLocation String,
+    documentPassword String
+}
+
+entity JobWork {//not using
+	//id Long,
+    //workspaceId Long,    
+    jobId Long,
+    assignedToTeams String, //[] //ref Team , stores Ids here
+    assignedToUsers String, //[] //ref User, we store Ids here	
+}
+
+entity UserWork {
+	id Long,
+    //workspaceId Long,    
+    //jobId Long
+}
+relationship OneToOne {
+	UserWork{user} to Ruser,
+    UserWork {team} to Team,
+    UserWork {job} to Job
+}
+
+
+entity TeamWork {//not using
+	//id Long,
+    //workspaceId Long,    
+    jobId Long,    
+    teamId Long
+}
+
+entity JobBoard {
+    //id Long,
+    //workspaceId Long,
+    jobBoardName String,
+    jobBoardType String,
+    username String,
+    password String,
+    settings String,
+    autoRefresh String,
+    jobDuration String
+}
+
+entity JobBoardSharedTo {
+	//id Long,
+    //workspaceId Long,
+    jobBoardId Long,
+    sharedToEmails String, //[]
+    sharedToUserIds String, //[]
+    sharedToTeamIds String, //[]
+    maxExamilsMonthly Integer,
+    expiresOn ZonedDateTime,
+}
+
+entity JobBoardPost {
+	//id Long,
+    //workspaceId Long,    
+    status JobBoardPostStatus
+}
+
+relationship OneToOne {
+	JobBoardPost{job} to Job,
+    JobBoardPost {jobBoard} to JobBoard,
+    JobBoardSharedTo {jobBoard} to JobBoard
+}
+
+entity JobCustomAttribute {
+ jobId Long,
+ attributeName String,
+ attributeType JobAttributeType, 
+ attributeValue String//[]
+}
+
+relationship OneToOne {
+	Job {postedByTeam} to Team,	
+	Job {businessUnit} to BusinessUnit,
+    Job {client} to Client,
+	Job {jobType} to CatalogueValue,
+    Job {industry} to CatalogueValue,
+    Job {department} to CatalogueValue,
+    Job {clientRecruiter} to Ruser, 
+    Job {clientManager} to Contact,
+    Job {accountManager} to Ruser,
+    Job {headOfRecruitment} to Ruser, 
+    Job {deliveryLeadManager} to Ruser, 
+    Job {domain} to CatalogueValue, 
+    Job {srDeliveryManager} to Ruser, 
+    Job {teamLead} to Ruser, 
+    Job {priority} to CatalogueValue,
+    Job {jobCloseReason} to CatalogueValue,
+    Job {jobCategory} to CatalogueValue,
+    Job {jobOccupation} to CatalogueValue,    
+}
+relationship OneToMany {
+	Job to JobLocation{job},
+    Job to JobDocument{job},
+    Job to UserWork {job},
+    Job to JobBoardPost{job},
+    Job to JobCustomAttribute{job}
+}
+
+entity Client {
+ //workspaceId Long,
+ //primaryBusinessUnitId Long,
+ clientVisibility ClientVisibility,
+ businessUnitIds String, //[] 
+ clientName String,
+ vmsClientName String
+ federalID String,
+ contactNumber String,
+ email String,
+ address String,
+ area String,
+ city String,
+ state String,
+ stateCode String,
+ county String,
+ country String,
+ countryCode String,
+ zipCode String, 
+ website String,
+ sendRequirement Boolean,
+ sendHotList Boolean,
+ fax String,
+ //industryId Long,//ref catalogue
+ status String,
+ //categoryId Long,//ref catalogue
+ //primaryOwnerUserId Long,// ref user
+ allowAccessToAllUsers Boolean,
+ ownershipIds String, //[] //ref user
+ clientLeadIds String, //[]//ref user
+ requiredDocuments String, //[]//ref catalogue
+ //paymentTermsId Long, //ref catalogue
+ //practiceId Long,//ref catalogue
+ practiceAlt String,
+ aboutCompany String,
+ stopNotifyingClientContactOnSubmitToClient Boolean,
+ defaultForJobPostings Boolean,
+ submissionGuidelines String,
+ 
+    assignedTo String, //[] //IDs ref User
+	assignedToTeams String, //[] //IDs ref Team
+	salesManagers String , //[]//IDs ref User
+	accountManagers String, //[]//IDs ref User
+	recruitmentManagers String, //[]//IDs ref User
+	defaultTATConfigForJobPostingOrVMSJobs Integer,
+	defaultTATConfigTimespan String,
+	notifyOnTATToUserTypes String, //[]
+	notifyOnTATToUserIds String, //[] //ref User
+	taxTermIds String, //[] //ref catalogue
+	workAuthorizationIds String, //[]//ref catalogue
+	postJobOnCareersPage Boolean,
+	defaultPayRateTaxTerm String,
+	defaultBillRateTaxTerm String,
+	referencesMandatoryForSubmission Boolean,
+	maxSubmissions Integer,
+	noOfPositions Integer,
+	
+	markUp String,
+    msp String,
+	
+	mailSubject String,
+    mailBody String,
+    fieldsForExcel String, //[]
+}
+
+entity ClientAccount {
+    clientId Long,
+    //workspaceId Long,
+    contactPerson String,
+    mobileNumber String,
+    officeNumber String,
+    officeNumberExtn String,
+    emailID String, 
+    designation String
+}
+
+entity ClientNote {
+    clientId Long,
+    //workspaceId Long,
+    action String,
+    notesPriority String,
+    note String,
+    notifyToUsers String, //[] //ref UserIds
+    remindMe Boolean
+}
+
+entity ClientDocument {
+    clientId Long,
+    //workspaceId Long,
+    documentType String,
+    title String, 
+    description String,
+    documentPath String
+}
+
+
+entity ClientGuidelineSubmissionDocument {
+    clientId Long,    
+    //workspaceId Long,
+    documentTitle String,
+    description String,
+    documentPath String  
+}
+
+entity Contact {
+    clientId Long,
+    //workspaceId Long,    
+    firstName String,
+    lastName String,
+    designation String,
+    officeNumber String,
+    officeNumberExtn String,
+    mobileNumber String,
+    emailID String,
+    altEmailID String,
+    //primaryOwnerUserId Long,//ref user
+    ownershipIds String, //[] //ref user
+    allowAccessToAllUsers Boolean,
+    address1 String,
+    address2 String,
+    area String,
+   city String,
+   state String,
+   stateCode String,
+   county String,
+   country String,
+   countryCode String,
+   zipCode String, 
+
+    profileURLs String, //[]
+    messengerIDs String, //[]
+    status String,
+    clientGroup String, //[]
+    about String    
+}
+
+entity Catalogue {
+   type String,
+   typeCode String
+}
+
+entity CatalogueValue {
+   catalogueId Long,
+   value String
+}
+
+relationship OneToOne {
+	Client{primaryBusinessUnit} to BusinessUnit,
+	Client{industry} to CatalogueValue,
+    Client{category} to CatalogueValue,
+    Client{paymentTerms} to CatalogueValue,
+    Client{practice} to CatalogueValue,
+    Client{primaryOwnerUser} to Ruser,
+    Contact{primaryOwnerUser} to Ruser
+}
+
+relationship OneToMany {
+	Client to ClientAccount{client},	
+	Client to ClientNote{client},
+	Client to ClientDocument{client},
+	Client to Contact{client},
+	Client to ClientGuidelineSubmissionDocument{client}
+}
+
+entity Ruser { 
+	login String,
+    password String,    
+    firstName String,
+    lastName String,    
+    email String,
+    activated Boolean,    
+    langKey String,
+    imageUrl String,    
+    activationKey String,
+    resetKey String,    
+    resetDate ZonedDateTime
+}
+
+paginate all with pagination
+service all with serviceClass
+
+//entity JobType {
+  //Permanent,Contract,Temporary,Internship,None,ContractToHireW2,ContractW2,ContractIndependent,ContractToHireIndependent,ContractCorpToCorp,ContractToHireCorpToCorp,PartTime,Freelance,PermanentAndContract
+//}
+
+
