@@ -1,0 +1,141 @@
+
+entity Candidate {
+    salutation String, //
+    firstName String,
+    middleName String,
+    lastName String,
+    email String,
+    altEmails String, //[]
+    phone String,
+    altPhones String, //[]
+    dob ZonedDateTime,
+    nationality String,
+    workAuthorizationId Long, //ref cata
+    address String,
+    area String,
+   city String,
+   state String,
+   stateCode String,
+   county String,
+   country String,
+   countryCode String,
+   zipCode String, 
+   source String,
+   totalExpInYears Double,
+   totalExpInMonths Double,
+   relevantExpInYears Double,
+   relevantExpInMonths Double,
+   referredBy String,
+   ownershipUserId Long, //ref user
+   currentJobTitle String,
+   currentEmployer String,
+   currentJobTypeId Long, //ref catalogue
+   currentPayCurrency String,
+   currentPay BigDecimal,
+   currentPayMonthly BigDecimal,//cal field
+   currentPayHourly BigDecimal,//cal field
+   currentPayYearly BigDecimal,//cal field   
+   currentPayTimeSpan SalaryTimeSpan,
+   otherCurrentBenefits String,
+   expectedPayCurrency String,
+   expectedPayMin BigDecimal,
+   expectedPayMax BigDecimal,
+   expectedPayMinMonthly BigDecimal,//cal field
+   expectedPayMinHourly BigDecimal,//cal field
+   expectedPayMinYearly BigDecimal,//cal field
+   expectedPayMaxMonthly BigDecimal,//cal field
+   expectedPayMaxHourly BigDecimal,//cal field
+   expectedPayMaxYearly BigDecimal,//cal field
+   expectedPayTimeSpan SalaryTimeSpan,
+   expectedPayTaxTermId Long, //ref catalogue
+   otherExpectedBenefits String,
+   additionalComments String,
+   relocation Boolean,
+   familyWillingToRelocate Boolean,
+   relocationType CandidateRelocationType, 
+   relocationRemarks String,
+   //relocationPreferredCity country   
+   taxTermIds String, //[]//ref cata //NEED TO REVISE - TALK TO AFZAL
+   noticePeriodInDays Integer, 
+   workAuthorizationExpiry ZonedDateTime,
+   gpa String,
+   aadharNumber String,
+   linkedInProfileURL String,
+   otherSocialURLs String, //[]
+   tags String, //[]
+   resumes JSON,
+   rightToReperesent JSON,
+   skills JSON, 
+   altSkills JSON,
+   technologies JSON,
+   certifications JSON,
+   languages JSON,
+   workExperience JSON,
+   education JSON,
+   employerDetails JSON,
+   documents JSON
+}
+
+entity CandidateRelocationPreference {
+    candidateId Long,
+    city String,
+    state String,
+    stateCode String,
+    county String,
+    country String,
+    countryCode String,
+    zipCode String
+}
+
+entity CandidatePipeline {
+    jobId Long,
+    statusId Long, //ref catalogue
+    submissionStatus String,
+    submissionStage String,
+    recruiterActions String, //[]
+    candidateResponses String, //[]
+    pipelineType CandidatePipelineType, 
+    reasonForNewJob String
+    
+}
+
+entity CatalogueValue{
+//id Long
+//Dummy
+}
+
+entity Job{
+//id Long
+//Dummy
+}
+
+enum Candidate { SalaryTimeSpan }
+
+enum CandidateRelocationType {
+	Within_City, Within_State, Within_County, Within_Country, Any, None
+}
+enum CandidatePipelineType {
+	TAGGED_TO_JOB, SUBMISSION
+}
+
+relationship OneToOne {	
+	CandidatePipeline{status} to CatalogueValue,
+    Candidate{workAuthorization} to CatalogueValue,
+    Candidate{ownershipUser} to RUser,
+    Candidate{currentJobType} to CatalogueValue,
+    Candidate{expectedPayTaxTerm} to CatalogueValue,
+    CandidatePipeline{job} to Job,
+    CandidatePipeline{status} to CatalogueValue
+}
+
+relationship OneToMany {
+	Candidate to CandidateRelocationPreference{candidateId}
+}
+
+entity RUser {
+	
+    resetDate ZonedDateTime
+}
+
+paginate all with pagination
+service all with serviceClass
