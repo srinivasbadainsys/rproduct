@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Candidate.
+    -->
+    <changeSet id="20230405064632-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="work_authorization_id"
+                                 baseTableName="candidate"
+                                 constraintName="fk_candidate__work_authorization_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="ownership_user_id"
+                                 baseTableName="candidate"
+                                 constraintName="fk_candidate__ownership_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="r_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="current_job_type_id"
+                                 baseTableName="candidate"
+                                 constraintName="fk_candidate__current_job_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="expected_pay_tax_term_id"
+                                 baseTableName="candidate"
+                                 constraintName="fk_candidate__expected_pay_tax_term_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+    </changeSet>
+</databaseChangeLog>

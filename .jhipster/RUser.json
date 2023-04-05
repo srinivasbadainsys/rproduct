@@ -1,0 +1,15 @@
+{
+  "applications": "*",
+  "changelogDate": "20230405064637",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "r_user",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "RUser",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

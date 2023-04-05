@@ -1,0 +1,23 @@
+{
+  "rproductApp": {
+    "catalogueValue": {
+      "home": {
+        "title": "Catalogue Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Catalogue Value",
+        "createOrEditLabel": "Create or edit a Catalogue Value",
+        "notFound": "No Catalogue Values found"
+      },
+      "created": "A new Catalogue Value is created with identifier {{ param }}",
+      "updated": "A Catalogue Value is updated with identifier {{ param }}",
+      "deleted": "A Catalogue Value is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Catalogue Value {{ id }}?"
+      },
+      "detail": {
+        "title": "Catalogue Value"
+      },
+      "id": "ID"
+    }
+  }
+}

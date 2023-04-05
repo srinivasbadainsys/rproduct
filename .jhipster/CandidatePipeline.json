@@ -1,0 +1,62 @@
+{
+  "applications": "*",
+  "changelogDate": "20230405064634",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "candidate_pipeline",
+  "fields": [
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "statusId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "submissionStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "submissionStage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recruiterActions",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "candidateResponses",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pipelineType",
+      "fieldType": "CandidatePipelineType",
+      "fieldValues": "TAGGED_TO_JOB,SUBMISSION"
+    },
+    {
+      "fieldName": "reasonForNewJob",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CandidatePipeline",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "status",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "job",
+      "ownerSide": true,
+      "relationshipName": "job",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

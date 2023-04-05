@@ -1,0 +1,15 @@
+{
+  "applications": "*",
+  "changelogDate": "20230405064636",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "job",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Job",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

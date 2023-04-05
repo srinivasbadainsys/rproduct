@@ -1,0 +1,342 @@
+{
+  "applications": "*",
+  "changelogDate": "20230405064632",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "candidate",
+  "fields": [
+    {
+      "fieldName": "salutation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "middleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "altEmails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "altPhones",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dob",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "nationality",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workAuthorizationId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "area",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "county",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zipCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "source",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "totalExpInYears",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "totalExpInMonths",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "relevantExpInYears",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "relevantExpInMonths",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "referredBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ownershipUserId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "currentJobTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currentEmployer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currentJobTypeId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "currentPayCurrency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currentPay",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "currentPayMonthly",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "currentPayHourly",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "currentPayYearly",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "currentPayTimeSpan",
+      "fieldType": "SalaryTimeSpan",
+      "fieldValues": "Fortnight,Monthly,Weekly"
+    },
+    {
+      "fieldName": "otherCurrentBenefits",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expectedPayCurrency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expectedPayMin",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "expectedPayMax",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "expectedPayMinMonthly",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "expectedPayMinHourly",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "expectedPayMinYearly",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "expectedPayMaxMonthly",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "expectedPayMaxHourly",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "expectedPayMaxYearly",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "expectedPayTimeSpan",
+      "fieldType": "SalaryTimeSpan",
+      "fieldValues": "Fortnight,Monthly,Weekly"
+    },
+    {
+      "fieldName": "expectedPayTaxTermId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "otherExpectedBenefits",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "additionalComments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "relocation",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "familyWillingToRelocate",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "relocationType",
+      "fieldType": "CandidateRelocationType",
+      "fieldValues": "Within_City,Within_State,Within_County,Within_Country,Any,None"
+    },
+    {
+      "fieldName": "relocationRemarks",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taxTermIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "noticePeriodInDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "workAuthorizationExpiry",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "gpa",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aadharNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "linkedInProfileURL",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "otherSocialURLs",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tags",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resumes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rightToReperesent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "skills",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "altSkills",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "technologies",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "certifications",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "languages",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workExperience",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "education",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "employerDetails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "documents",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Candidate",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "workAuthorization",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "rUser",
+      "ownerSide": true,
+      "relationshipName": "ownershipUser",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "currentJobType",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "catalogueValue",
+      "ownerSide": true,
+      "relationshipName": "expectedPayTaxTerm",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "candidateRelocationPreference",
+      "otherEntityRelationshipName": "candidateId",
+      "relationshipName": "candidateRelocationPreference",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}
