@@ -1,0 +1,10 @@
+{
+  "rproductApp": {
+    "SalaryTimeSpan": {
+      "null": "",
+      "Fortnight": "Fortnight",
+      "Monthly": "Monthly",
+      "Weekly": "Weekly"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "rproductApp": {
+    "candidateRelocationPreference": {
+      "home": {
+        "title": "Candidate Relocation Preferences",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Candidate Relocation Preference",
+        "createOrEditLabel": "Create or edit a Candidate Relocation Preference",
+        "notFound": "No Candidate Relocation Preferences found"
+      },
+      "created": "A new Candidate Relocation Preference is created with identifier {{ param }}",
+      "updated": "A Candidate Relocation Preference is updated with identifier {{ param }}",
+      "deleted": "A Candidate Relocation Preference is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Candidate Relocation Preference {{ id }}?"
+      },
+      "detail": {
+        "title": "Candidate Relocation Preference"
+      },
+      "id": "ID",
+      "candidateId": "Candidate Id",
+      "city": "City",
+      "state": "State",
+      "stateCode": "State Code",
+      "county": "County",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "zipCode": "Zip Code",
+      "candidateId": "Candidate Id"
+    }
+  }
+}

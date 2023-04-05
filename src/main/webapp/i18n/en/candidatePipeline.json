@@ -1,0 +1,33 @@
+{
+  "rproductApp": {
+    "candidatePipeline": {
+      "home": {
+        "title": "Candidate Pipelines",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Candidate Pipeline",
+        "createOrEditLabel": "Create or edit a Candidate Pipeline",
+        "notFound": "No Candidate Pipelines found"
+      },
+      "created": "A new Candidate Pipeline is created with identifier {{ param }}",
+      "updated": "A Candidate Pipeline is updated with identifier {{ param }}",
+      "deleted": "A Candidate Pipeline is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Candidate Pipeline {{ id }}?"
+      },
+      "detail": {
+        "title": "Candidate Pipeline"
+      },
+      "id": "ID",
+      "jobId": "Job Id",
+      "statusId": "Status Id",
+      "submissionStatus": "Submission Status",
+      "submissionStage": "Submission Stage",
+      "recruiterActions": "Recruiter Actions",
+      "candidateResponses": "Candidate Responses",
+      "pipelineType": "Pipeline Type",
+      "reasonForNewJob": "Reason For New Job",
+      "status": "Status",
+      "job": "Job"
+    }
+  }
+}

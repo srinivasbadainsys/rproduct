@@ -1,0 +1,23 @@
+{
+  "rproductApp": {
+    "rUser": {
+      "home": {
+        "title": "R Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new R User",
+        "createOrEditLabel": "Create or edit a R User",
+        "notFound": "No R Users found"
+      },
+      "created": "A new R User is created with identifier {{ param }}",
+      "updated": "A R User is updated with identifier {{ param }}",
+      "deleted": "A R User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete R User {{ id }}?"
+      },
+      "detail": {
+        "title": "R User"
+      },
+      "id": "ID"
+    }
+  }
+}

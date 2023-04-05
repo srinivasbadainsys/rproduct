@@ -1,0 +1,9 @@
+{
+  "rproductApp": {
+    "CandidatePipelineType": {
+      "null": "",
+      "TAGGED_TO_JOB": "TAGGED_TO_JOB",
+      "SUBMISSION": "SUBMISSION"
+    }
+  }
+}

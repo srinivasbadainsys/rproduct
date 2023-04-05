@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Candidate.
+    -->
+    <changeSet id="20230405064632-1" author="jhipster">
+        <createTable tableName="candidate">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="salutation" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="first_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="middle_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="last_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="alt_emails" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="phone" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="alt_phones" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dob" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="nationality" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="work_authorization_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="address" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="area" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="city" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="state" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="state_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="county" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="country" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="country_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zip_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="source" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="total_exp_in_years" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="total_exp_in_months" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="relevant_exp_in_years" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="relevant_exp_in_months" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="referred_by" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ownership_user_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="current_job_title" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="current_employer" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="current_job_type_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="current_pay_currency" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="current_pay" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="current_pay_monthly" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="current_pay_hourly" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="current_pay_yearly" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="current_pay_time_span" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="other_current_benefits" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_currency" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_min" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_max" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_min_monthly" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_min_hourly" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_min_yearly" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_max_monthly" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_max_hourly" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_max_yearly" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_time_span" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="expected_pay_tax_term_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="other_expected_benefits" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="additional_comments" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="relocation" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="family_willing_to_relocate" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="relocation_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="relocation_remarks" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tax_term_ids" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="notice_period_in_days" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="work_authorization_expiry" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="gpa" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="aadhar_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="linked_in_profile_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="other_social_ur_ls" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tags" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="resumes" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="right_to_reperesent" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="skills" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="alt_skills" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="technologies" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="certifications" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="languages" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="work_experience" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="education" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="employer_details" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="documents" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="work_authorization_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_candidate__work_authorization_id" />
+            </column>
+            <column name="ownership_user_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_candidate__ownership_user_id" />
+            </column>
+            <column name="current_job_type_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_candidate__current_job_type_id" />
+            </column>
+            <column name="expected_pay_tax_term_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_candidate__expected_pay_tax_term_id" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="candidate" columnName="dob" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="candidate" columnName="work_authorization_expiry" columnDataType="${datetimeType}"/>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20230405064632-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/candidate.csv"
+                  separator=";"
+                  tableName="candidate"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="salutation" type="string"/>
+            <column name="first_name" type="string"/>
+            <column name="middle_name" type="string"/>
+            <column name="last_name" type="string"/>
+            <column name="email" type="string"/>
+            <column name="alt_emails" type="string"/>
+            <column name="phone" type="string"/>
+            <column name="alt_phones" type="string"/>
+            <column name="dob" type="date"/>
+            <column name="nationality" type="string"/>
+            <column name="work_authorization_id" type="numeric"/>
+            <column name="address" type="string"/>
+            <column name="area" type="string"/>
+            <column name="city" type="string"/>
+            <column name="state" type="string"/>
+            <column name="state_code" type="string"/>
+            <column name="county" type="string"/>
+            <column name="country" type="string"/>
+            <column name="country_code" type="string"/>
+            <column name="zip_code" type="string"/>
+            <column name="source" type="string"/>
+            <column name="total_exp_in_years" type="numeric"/>
+            <column name="total_exp_in_months" type="numeric"/>
+            <column name="relevant_exp_in_years" type="numeric"/>
+            <column name="relevant_exp_in_months" type="numeric"/>
+            <column name="referred_by" type="string"/>
+            <column name="ownership_user_id" type="numeric"/>
+            <column name="current_job_title" type="string"/>
+            <column name="current_employer" type="string"/>
+            <column name="current_job_type_id" type="numeric"/>
+            <column name="current_pay_currency" type="string"/>
+            <column name="current_pay" type="numeric"/>
+            <column name="current_pay_monthly" type="numeric"/>
+            <column name="current_pay_hourly" type="numeric"/>
+            <column name="current_pay_yearly" type="numeric"/>
+            <column name="current_pay_time_span" type="string"/>
+            <column name="other_current_benefits" type="string"/>
+            <column name="expected_pay_currency" type="string"/>
+            <column name="expected_pay_min" type="numeric"/>
+            <column name="expected_pay_max" type="numeric"/>
+            <column name="expected_pay_min_monthly" type="numeric"/>
+            <column name="expected_pay_min_hourly" type="numeric"/>
+            <column name="expected_pay_min_yearly" type="numeric"/>
+            <column name="expected_pay_max_monthly" type="numeric"/>
+            <column name="expected_pay_max_hourly" type="numeric"/>
+            <column name="expected_pay_max_yearly" type="numeric"/>
+            <column name="expected_pay_time_span" type="string"/>
+            <column name="expected_pay_tax_term_id" type="numeric"/>
+            <column name="other_expected_benefits" type="string"/>
+            <column name="additional_comments" type="string"/>
+            <column name="relocation" type="boolean"/>
+            <column name="family_willing_to_relocate" type="boolean"/>
+            <column name="relocation_type" type="string"/>
+            <column name="relocation_remarks" type="string"/>
+            <column name="tax_term_ids" type="string"/>
+            <column name="notice_period_in_days" type="numeric"/>
+            <column name="work_authorization_expiry" type="date"/>
+            <column name="gpa" type="string"/>
+            <column name="aadhar_number" type="string"/>
+            <column name="linked_in_profile_url" type="string"/>
+            <column name="other_social_ur_ls" type="string"/>
+            <column name="tags" type="string"/>
+            <column name="resumes" type="string"/>
+            <column name="right_to_reperesent" type="string"/>
+            <column name="skills" type="string"/>
+            <column name="alt_skills" type="string"/>
+            <column name="technologies" type="string"/>
+            <column name="certifications" type="string"/>
+            <column name="languages" type="string"/>
+            <column name="work_experience" type="string"/>
+            <column name="education" type="string"/>
+            <column name="employer_details" type="string"/>
+            <column name="documents" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

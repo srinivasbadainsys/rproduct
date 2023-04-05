@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity CandidatePipeline.
+    -->
+    <changeSet id="20230405064634-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="status_id"
+                                 baseTableName="candidate_pipeline"
+                                 constraintName="fk_candidate_pipeline__status_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="catalogue_value"/>
+
+        <addForeignKeyConstraint baseColumnNames="job_id"
+                                 baseTableName="candidate_pipeline"
+                                 constraintName="fk_candidate_pipeline__job_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="job"/>
+    </changeSet>
+</databaseChangeLog>
